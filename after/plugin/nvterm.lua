@@ -1,0 +1,34 @@
+-- require("nvterm").setup({
+--   terminals = {
+--     shell = vim.o.shell,
+--     list = {},
+--     type_opts = {
+--       float = {
+--         relative = 'editor',
+--         row = 0,
+--         col = 0,
+--         width = 1,
+--         height = 1,
+--         border = "single",
+--       },
+--       horizontal = { location = "rightbelow", split_ratio = .3, },
+--       vertical = { location = "rightbelow", split_ratio = .5 },
+--     }
+--   },
+--   behavior = {
+--     autoclose_on_quit = {
+--       enabled = false,
+--       confirm = true,
+--     },
+--     close_on_exit = true,
+--     auto_insert = true,
+--   },
+-- })
+--
+-- local toggle_float = function() require("nvterm.terminal").toggle "float" end
+
+-- vim.keymap.set("n", "<c-bs>", nil)
+-- vim.keymap.set("t", "<c-bs>", nil)
+
+-- vim.keymap.set("n", "<c-[>", nil)
+-- vim.keymap.set("t", "<c-[>", nil)
