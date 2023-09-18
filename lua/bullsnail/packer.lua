@@ -67,8 +67,8 @@ return require('packer').startup(function(use)
             config = function() require('gitsigns').setup() end
         },
 
-        use("NvChad/nvterm"),
-        use("NvChad/base46"),
+        -- use("NvChad/nvterm"),
+        -- use("NvChad/base46"),
 
         use("marko-cerovac/material.nvim"),
         use 'm4xshen/autoclose.nvim',
@@ -80,5 +80,17 @@ return require('packer').startup(function(use)
         use { 'mhartington/formatter.nvim' },
         use("tiagovla/scope.nvim"),
         use { 'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons' },
+        use 'sbdchd/neoformat';
+        use 'delphinus/vim-firestore';
+        use 'github/copilot.vim';
+        use {
+            'rmagatti/auto-session',
+            config = function()
+                require("auto-session").setup {
+                    log_level = "error",
+                    auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/"},
+                }
+            end
+        }
     }
 end)

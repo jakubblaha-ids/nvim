@@ -1,6 +1,6 @@
 vim.cmd [[ set background=dark ]]
 -- vim.cmd [[ colorscheme palenight ]]
--- vim.cmd [[ set number ]]
+vim.cmd [[ set number ]]
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
